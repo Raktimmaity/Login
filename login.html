@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                        "Lucida Sans", Arial, sans-serif;
+        }
+        body{
+            background-color: #d1d0d0;
+        }
+        .cont{
+            width: 25%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: black 1px 0px 20px 1px;
+        }
+        .head{
+            padding: 20px;
+            text-align: center;
+        }
+        .uname{
+            color: grey;
+        }
+        .utext{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid grey;
+            padding: 5px;
+        }
+        .pass{
+            margin-top: 5px;
+        }
+        .btn{
+            padding: 10px;
+            width: 100%;
+            margin-top: 25px;
+            display: block;
+            border: none;
+            background-color: #22aeff;
+            color: #fff;
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 935px) {
+            .cont{
+                width: 50%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: black 1px 0px 20px 1px;
+            }
+        }
+        @media screen and (max-width: 280px) {
+            .cont{
+                width: 90%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: black 1px 0px 20px 1px;
+            }
+        }
+        @media screen and (max-width: 180px) {
+            .cont{
+                width: 90%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow: black 1px 0px 20px 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="head">
+            <h1>Login</h1>
+        </div>
+    <label for="uname" class="uname">Username</label>
+    <input type="text" class="utext">
+    <label for="pass" class="uname pass">Password</label>
+    <input type="password" class="utext" name="pass" id="pass">
+    <input type="submit" class="btn" value="Submit">
+</div>
+</body>
+</html>

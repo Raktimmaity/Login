@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                        "Lucida Sans", Arial, sans-serif;
+        }
+        body{
+            background-color: #000000;
+        }
+        .cont{
+            width: 25%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        .text{
+            margin-top: 10px;
+        }
+        .box{
+            margin-top: 5px;
+            border-radius: 5px;
+            height: 30px;
+        }
+        .btn{
+            height: 40px;
+            padding: 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #000000;
+            transition: .2s ease-in;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #fff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>Signup</h1>
+        <label for="name" class="text">Name:</label>
+        <input type="text" name="" id="" class="box">
+        <label for="batch" class="text">Batch:</label>
+        <select name="" id="" class="box">
+            <option value="Sigma 1.0">Sigma 1.0</option>
+            <option value="Sigma 2.0">Sigma 2.0</option>
+        </select>
+        <label for="age" class="text">Age:</label>
+        <input type="number" name="" id="" class="box"/>
+        <label for="pass" class="text">Password:</label>
+        <input type="password" name="" id="" class="box"/>
+        <input type="submit" value="Signup" class="text btn"/>
+    </div>
+</body>
+</html>
